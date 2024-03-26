@@ -13,9 +13,10 @@ const Context = ({ children }) => {
   let [valorProduto, setValorProduto] = useState("");
   let [dataRegistro, setDataRegistro] = useState("");
   let [camposPreenchidos, setCamposPreenchidos] = useState(false);
+  let [autenticado, setAutenticado ] = useState(false);
 
   return (
-    <DataContext.Provider value={{ key, setKey, salvarProduto, setSalvarProduto, nomeComercio, setNomeComercio, nomeCategoria, setNomeCategoria, nomeProduto, setNomeProduto, nomeMarca, setNomeMarca, nomeMedida, setNomeMedida, valorProduto, setValorProduto, dataRegistro, setDataRegistro, camposPreenchidos, setCamposPreenchidos}}>
+    <DataContext.Provider value={{ key, setKey, salvarProduto, setSalvarProduto, nomeComercio, setNomeComercio, nomeCategoria, setNomeCategoria, nomeProduto, setNomeProduto, nomeMarca, setNomeMarca, nomeMedida, setNomeMedida, valorProduto, setValorProduto, dataRegistro, setDataRegistro, camposPreenchidos, setCamposPreenchidos, autenticado, setAutenticado}}>
       {children}
     </DataContext.Provider>
   );
